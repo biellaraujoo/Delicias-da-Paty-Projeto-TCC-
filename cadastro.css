@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7eff1;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #f7cfd8;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #6b4a4a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3d5f4f;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Área de cadastro */
+
+.area-cadastro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.area-cadastro h1 {
+    color: #5c2f36;
+    margin-bottom: 10px;
+}
+
+.area-cadastro p {
+    margin-bottom: 30px;
+}
+
+/* Cartão */
+
+.cartao-cadastro {
+    background-color: #f9e7eb;
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulário */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    margin-top: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #b57b87;
+}
+
+input::placeholder {
+    color: #f0f0f0;
+}
+
+/* Botão */
+
+.botao-cadastrar {
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #a56d79;
+    color: white;
+    cursor: pointer;
+}
+
+/* Link para login */
+
+.link-login {
+    display: block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #5c2f36;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .cartao,
+    .cartao-login,
+    .cartao-cadastro,
+    .cartao-recuperacao {
+        width: 95%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

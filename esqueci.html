@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha - Delícias da Paty</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="esqueci.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+
+    <header>
+        <h2>
+            Delícias da Paty
+        </h2>
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="./categorias.html">Produtos</a>
+            <a href="./">Sobre nós</a>
+            <a href="./">Contato</a>
+            <a href="./login.html">
+                <img src="./icons/user.png" alt="login">
+            </a>
+            <a href="./encomendas.html">
+                <img src="./icons/bag.png" alt="sacola">
+            </a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Conteúdo principal -->
+
+    <main>
+        <section class="area-recuperacao">
+            <h1>
+                Recuperar Senha
+            </h1>
+            <p>
+                Informe seu e-mail para receber as instruções de redefinição de senha.
+            </p>
+            <div class="cartao-recuperacao">
+                <form id="formulario-recuperacao">
+                    <label for="email-recuperacao">
+                        E-mail
+                    </label>
+                    <input type="email" id="email-recuperacao" placeholder="Digite seu e-mail" required>
+                    <button type="submit" class="botao-enviar">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+            <a href="login.html" class="link-login">
+                ← Voltar para Login
+            </a>
+        </section>
+    </main>
+    <script src="esqueci.js"></script>
+</body>
+
+</html>
