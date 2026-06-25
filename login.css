@@ -140,25 +140,90 @@ footer {
     margin-top: 40px;
 }
 
-@media (max-width: 480px) {
+/* CELULARES */
 
-    h1 {
-        font-size: 28px;
+
+@media screen and (max-width: 480px){
+
+    header h2{
+        font-size: 1.5rem;
+        text-align: center;
     }
 
-    p {
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a{
         font-size: 14px;
     }
 
-    .cartao,
-    .cartao-login,
-    .cartao-cadastro,
-    .cartao-recuperacao {
+    nav img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .area-login h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .area-login p{
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .cartao-login{
         width: 95%;
         padding: 20px;
     }
 
-    button {
+    .grupo-botoes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #botao-login,
+    #botao-cadastro{
         width: 100%;
     }
+
+    form input{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .botao-entrar{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+        padding: 15px;
+    }
+
+}
+
+
+/* CELULARES PEQUENOS */
+
+
+@media screen and (max-width: 320px){
+
+    header h2{
+        font-size: 1.2rem;
+    }
+
+    .area-login h1{
+        font-size: 1.7rem;
+    }
+
+    .cartao-login{
+        padding: 15px;
+    }
+
 }

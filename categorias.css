@@ -1,6 +1,6 @@
 /* Banner */
 
-.banner-categorias img{
+.banner-categorias img {
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -9,17 +9,17 @@
 
 /* Título */
 
-.titulo-categorias{
+.titulo-categorias {
     text-align: center;
     margin-top: 40px;
 }
 
-.titulo-categorias h1{
+.titulo-categorias h1 {
     color: #a56d79;
     font-size: 55px;
 }
 
-.titulo-categorias h1::after{
+.titulo-categorias h1::after {
 
     content: "";
     display: block;
@@ -30,7 +30,7 @@
 }
 
 /* Área das categorias */
-.area-categorias{
+.area-categorias {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -40,22 +40,23 @@
 
 /* Cartão */
 
-.cartao-categoria{
+.cartao-categoria {
 
     background-color: #9c5f47;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20PX;
     transition: 0.3s;
 }
+
 .cartao-categoria:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 
-.cartao-categoria img{
+.cartao-categoria img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -64,7 +65,7 @@
 
 /* Botão */
 
-.botao-categoria{
+.botao-categoria {
     width: 80%;
     margin: 15px auto;
     display: block;
@@ -78,6 +79,101 @@
     cursor: pointer;
 }
 
-.botao-categoria:hover{
+.botao-categoria:hover {
     opacity: 0.9;
+}
+
+/* Grade dos produtos */
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cartão do produto */
+
+.cartao-produto {
+    width: 100%;
+    background-color: #f9e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cartao-produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.botao-produto {
+    width: 100%;
+}
+
+
+/* CELULAR */
+
+
+@media screen and (max-width: 480px) {
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    nav img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .area-catalogo {
+        padding: 20px 10px;
+    }
+
+    .area-catalogo h1 {
+        font-size: 32px;
+    }
+
+    .grade-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .cartao-produto {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* CELULAR PEQUENO */
+
+
+@media screen and (max-width: 320px) {
+
+    .area-catalogo h1 {
+        font-size: 26px;
+    }
+
+    .cartao-produto h3 {
+        font-size: 18px;
+    }
+
+    .cartao-produto p {
+        font-size: 14px;
+    }
+
 }

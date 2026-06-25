@@ -74,25 +74,62 @@
     cursor: pointer;
 }
 
-@media (max-width: 480px) {
 
-    h1 {
-        font-size: 28px;
+/* CELULARES */
+
+
+@media screen and (max-width: 480px){
+
+    header h2{
+        font-size: 1.5rem;
+        text-align: center;
     }
 
-    p {
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a{
         font-size: 14px;
     }
 
-    .cartao,
-    .cartao-login,
-    .cartao-cadastro,
-    .cartao-recuperacao {
-        width: 95%;
-        padding: 20px;
+    nav img{
+        width: 20px;
+        height: 20px;
     }
 
-    button {
+    .area-catalogo h1{
+        font-size: 2rem;
+    }
+
+    .area-catalogo p{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .grade-produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cartao-produto{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .cartao-produto img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .botao-produto{
         width: 100%;
     }
+
 }
+

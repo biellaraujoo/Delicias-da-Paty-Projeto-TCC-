@@ -90,25 +90,87 @@
     color: black;
 }
 
-@media (max-width: 480px) {
 
-    h1 {
-        font-size: 28px;
+/* CELULARES */
+
+
+@media screen and (max-width: 480px) {
+
+    header h2 {
+        font-size: 1.5rem;
+        text-align: center;
     }
 
-    p {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
         font-size: 14px;
     }
 
-    .cartao,
-    .cartao-login,
-    .cartao-cadastro,
-    .cartao-recuperacao {
+    nav img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .area-encomenda h1 {
+        font-size: 2rem;
+    }
+
+    .area-encomenda p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .cartao-encomenda {
         width: 95%;
         padding: 20px;
     }
 
-    button {
+    .cartao-encomenda input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .linha-cartao {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .campo-cartao {
         width: 100%;
     }
+
+    .botao-encomendar {
+        width: 100%;
+    }
+
+    .titulo-cartao {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* CELULARES PEQUENOS */
+
+
+@media screen and (max-width: 320px) {
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .area-encomenda h1 {
+        font-size: 1.7rem;
+    }
+
+    .cartao-encomenda {
+        padding: 15px;
+    }
+
 }

@@ -106,25 +106,81 @@ input::placeholder {
     font-weight: bold;
 }
 
-@media (max-width: 480px) {
+/* CELULARES */
 
-    h1 {
-        font-size: 28px;
+@media screen and (max-width: 480px){
+
+    header h2{
+        font-size: 1.5rem;
+        text-align: center;
     }
 
-    p {
+    nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a{
         font-size: 14px;
     }
 
-    .cartao,
-    .cartao-login,
-    .cartao-cadastro,
-    .cartao-recuperacao {
+    nav img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .area-cadastro h1{
+        font-size: 2rem;
+    }
+
+    .area-cadastro p{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .cartao-cadastro{
         width: 95%;
         padding: 20px;
     }
 
-    button {
-        width: 100%;
+    .cartao-cadastro label{
+        font-size: 14px;
     }
+
+    .cartao-cadastro input{
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .botao-cadastrar{
+        width: 100%;
+        padding: 12px;
+    }
+
+    .link-login{
+        font-size: 14px;
+    }
+
+}
+
+
+/* CELULARES MUITO PEQUENOS */
+
+
+@media screen and (max-width: 320px){
+
+    header h2{
+        font-size: 1.2rem;
+    }
+
+    .area-cadastro h1{
+        font-size: 1.7rem;
+    }
+
+    .cartao-cadastro{
+        padding: 15px;
+    }
+
 }

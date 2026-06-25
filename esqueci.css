@@ -64,25 +64,76 @@
     color: rgba(0, 0, 0, 0.795);
 }
 
-@media (max-width: 480px) {
+/* CELULARES */
 
-    h1 {
-        font-size: 28px;
+
+@media screen and (max-width: 480px) {
+
+    header h2 {
+        font-size: 1.5rem;
+        text-align: center;
     }
 
-    p {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
         font-size: 14px;
     }
 
-    .cartao,
-    .cartao-login,
-    .cartao-cadastro,
+    nav img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .area-recuperacao h1 {
+        font-size: 2rem;
+    }
+
+    .area-recuperacao p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
     .cartao-recuperacao {
         width: 95%;
         padding: 20px;
     }
 
-    button {
+    .cartao-recuperacao input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .botao-enviar {
         width: 100%;
     }
+
+    .link-login {
+        font-size: 14px;
+    }
+
+}
+
+
+/* CELULARES PEQUENOS */
+
+
+@media screen and (max-width: 320px) {
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .area-recuperacao h1 {
+        font-size: 1.7rem;
+    }
+
+    .cartao-recuperacao {
+        padding: 15px;
+    }
+
 }
