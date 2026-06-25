@@ -18,15 +18,10 @@
 
 .cartao-recuperacao {
     background-color: #f9e7eb;
-
     max-width: 550px;
-
     margin: auto;
-
     padding: 30px;
-
     border-radius: 10px;
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -34,17 +29,11 @@
 
 .botao-enviar {
     margin-top: 25px;
-
     padding: 12px;
-
     border: none;
-
     border-radius: 20px;
-
     background-color: #a56d79;
-
     color: white;
-
     cursor: pointer;
 }
 

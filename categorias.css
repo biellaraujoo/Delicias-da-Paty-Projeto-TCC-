@@ -81,6 +81,7 @@
 
 .botao-categoria:hover {
     opacity: 0.9;
+    text-decoration: none;
 }
 
 /* Grade dos produtos */
