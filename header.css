@@ -1,0 +1,30 @@
+/* Cabeçalho */
+
+header {
+    background-color: #f7cfd8;
+    padding: 20px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #6b4a4a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3d5f4f;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+hr {
+    background-color: #5c2f36;
+}
+
+nav img {
+    width: 20px;
+    color: #31503e;
+}

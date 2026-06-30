@@ -17,6 +17,7 @@
 /* Cartão */
 
 .cartao-encomenda {
+    height: 480px;
     background-color: #f9e7eb;
     max-width: 600px;
     margin: auto;
@@ -30,6 +31,7 @@
 #formulario-encomenda {
     display: flex;
     flex-direction: column;
+    font-family: o;
 }
 
 #formulario-encomenda label {
@@ -89,6 +91,19 @@
 ::placeholder {
     color: black;
 }
+
+.link-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-top: 25px;
+    color: #5c2f36;
+    font-weight: bold;
+}
+
 
 
 /* CELULARES */

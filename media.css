@@ -1,0 +1,329 @@
+/* ==========================================================================
+   MEDIA QUERIES UNIFICADAS - CORREÇÃO DE QUEBRAS (INDEX E HISTÓRIA)
+   ========================================================================== */
+
+/* --- TELA GRANDE / DESKTOP (Telas maiores que 1024px) --- */
+@media (min-width: 1025px) {
+  .menu-navegacao {
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* Mantém os contêineres alinhados lado a lado perfeitamente */
+  .caixaProdutos, 
+  .grade-produtos, 
+  .grade-pilares,
+  .container-crachas {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .grade-produtos .cartao-produto {
+    width: 260px;
+  }
+}
+
+/* --- TABLETS E TELAS MÉDIAS (Máximo 1024px) --- */
+@media (max-width: 1024px) {
+  /* Menu e Cabeçalho */
+  .barra-navegacao {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 15px;
+    text-align: center;
+  }
+  .container-logo img {
+    width: 240px;
+  }
+  .menu-navegacao {
+    gap: 20px;
+  }
+  
+  .caixa, .caixaContato {
+    width: 95%;
+  }
+
+  /* Títulos Principais */
+  .cardapio h1 { font-size: 45px; }
+  .tituloSecao h1 { font-size: 38px; }
+  .tituloContato h1 { font-size: 38px; }
+
+  /* Ajuste das seções institucionais (Foto lateral e Texto) */
+  .cartao-historia, .cartao-sobre, .cartao-sucesso, .caixaContato {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  
+  .texto-historia, .texto-sobre, .texto-sucesso, #formulario, .contatos {
+    width: 100% !important;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .imagem-historia img, .imagem-sobre img, .imagem-sucesso img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  /* RESOLUÇÃO DA QUEBRA: Crachás da Home ("Porque Delícias da Paty") */
+  .container-crachas {
+    display: flex !important;
+    flex-direction: column !important; /* Transforma em coluna para não sobrepor */
+    align-items: center !important;
+    gap: 20px !important;
+    margin: 30px auto !important;
+    height: auto !important; /* Remove qualquer restrição de altura que cause o bug */
+  }
+
+  .cracha {
+    width: 280px !important;
+    height: auto !important;
+    padding: 20px !important;
+  }
+
+  /* RESOLUÇÃO DA QUEBRA: Pilares da História (Missão, Visão, Valores) */
+  .grade-pilares {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 35px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .cartao-pilar {
+    width: 90% !important;
+    max-width: 450px !important;
+    height: auto !important;
+    padding: 30px 20px !important;
+  }
+
+  /* Mais amados (Home) */
+  .grade-produtos {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px !important;
+  }
+
+  .grade-produtos .cartao-produto {
+    width: 100% !important;
+    max-width: 340px !important;
+  }
+}
+
+/* --- SMARTPHONES / CELULARES (Máximo 600px) --- */
+@media (max-width: 600px) {
+  .caixa {
+    width: 92%;
+    padding-top: 20px;
+  }
+
+  .menu-navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+    font-size: 16px;
+  }
+
+  .cardapio h1 { 
+    font-size: 32px; 
+    text-underline-offset: 8px;
+  }
+  
+  .tituloSecao h1, .tituloContato h1 { 
+    font-size: 26px; 
+    margin-top: 35px;
+  }
+
+  hr {
+    width: 85%;
+    margin-bottom: 25px;
+  }
+
+  /* Lista de Itens do Menu Mobile */
+  .caixaItem {
+    gap: 12px;
+  }
+  .itens {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+
+  /* Força tudo a se comportar como listas verticais limpas no celular */
+  .caixaProdutos, 
+  .grade-produtos, 
+  .grade-pilares, 
+  .container-crachas {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Ajuste individual das larguras dos cards no mobile */
+  .card-produto, 
+  .grade-produtos .cartao-produto, 
+  .cartao-pilar,
+  .cracha {
+    width: 100% !important;
+    max-width: 290px !important;
+    height: auto !important;
+  }
+  
+  .card-produto img, 
+  .grade-produtos .cartao-produto img {
+    height: 200px;
+  }
+
+  /* Banner Principal da Home */
+  .secao-banner {
+    padding: 30px 15px;
+    text-align: center;
+  }
+  .secao-banner h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  /* Formulário de Dúvidas */
+  #formulario input, #formulario textarea {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* Botão de envio/encomenda mobile */
+  .caixaBotao {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 0 5px;
+  }
+  .botao {
+    font-size: 20px;
+    height: 60px;
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  .rodape {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+}
+/* ==========================================================================
+   MEDIA QUERIES UNIFICADAS (RESPONSIVIDADE FORÇADA)
+   ========================================================================== */
+
+/* --- TABLETS E TELAS MÉDIAS (Máximo 1024px) --- */
+@media (max-width: 1024px) {
+  .barra-navegacao {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  /* Ajuste das seções institucionais de Foto + Texto */
+  .cartao-historia, .cartao-sobre, .cartao-sucesso, .caixaContato {
+    display: flex !important;
+    flex-direction: column !important; /* Empilha a foto e o texto */
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  
+  .texto-historia, .texto-sobre, .texto-sucesso, #formulario, .contatos {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Evita que as fotos sumam ou quebrem a proporção */
+  .imagem-historia img, .imagem-sobre img, .imagem-sucesso img {
+    width: 100% !important;
+    max-width: 450px !important;
+    height: auto !important;
+  }
+
+  /* Alinha os blocos de estatísticas (Crachás) em coluna */
+  .container-crachas {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  /* Alinha os Pilares da História em coluna */
+  .grade-pilares {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px !important;
+  }
+  
+  .cartao-pilar {
+    width: 90% !important;
+    max-width: 400px !important;
+  }
+
+  /* Alinha os produtos "Mais Amados" da Home */
+  .grade-produtos {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px !important;
+  }
+
+  .grade-produtos .cartao-produto {
+    width: 90% !important;
+    max-width: 320px !important;
+  }
+}
+
+/* --- SMARTPHONES / CELULARES (Máximo 600px) --- */
+@media (max-width: 600px) {
+  .menu-navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 15px;
+    font-size: 16px;
+  }
+
+  /* Redução de fontes para não quebrar títulos */
+  .cardapio h1, .secao-banner h1 { font-size: 30px !important; }
+  .tituloSecao h1, .tituloContato h1, .secao-destaques h2, .secao-produtos h2 { font-size: 24px !important; }
+
+  /* Ajuste geral dos contêineres mobile */
+  .caixaProdutos, .grade-produtos, .grade-pilares, .container-crachas {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+  
+  /* Tamanho ideal para visualização em celular */
+  .card-produto, .grade-produtos .cartao-produto, .cartao-pilar, .cracha {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+  }
+
+  .card-produto img, .grade-produtos .cartao-produto img {
+    height: 200px !important;
+  }
+
+  .botao {
+    font-size: 18px !important;
+    height: 60px !important;
+    width: 100% !important;
+  }
+}

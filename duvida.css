@@ -1,0 +1,134 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: #ffeff1;
+}
+
+/* mexendo na área de contato */
+
+.tituloContato{
+    text-align: center;
+    color: #7a4228;
+    font-size: 26px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.caixaContato{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+
+
+#formulario{
+    width: 650px;
+    background-color: #dda6ab;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 18px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#formulario input{
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background-color: #9b6268;
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+#formulario textarea{
+    height: 160px;
+    border: none;
+    border-radius: 20px;
+    background-color: #9b6268;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    resize: none;
+}
+
+#formulario button{
+    width: 300px;
+    height: 60px;
+    margin: auto;
+    background-color: #b67b81;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formulario button:hover{
+    background-color: #955d63;
+}
+
+.contatos{
+    width: 320px;
+    background-color: #dda6ab;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 8px 8px 18px gray;
+}
+
+.contatos h2{
+    color: #7a4228;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.informacao{
+    background-color: #955d63;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.redes{
+    background-color: #955d63;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 15px;
+}
+
+.redes img{
+    width: 100px;
+    height: 100px;
+    
+}
+/* Rodapé */
+.rodape {
+  background-color: #b07270;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  width: 100%;
+}
