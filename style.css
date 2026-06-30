@@ -38,7 +38,9 @@ body {
     padding: 20px 50px;
     border-bottom: 2px solid #f3b0ab;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 20px 60px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .texto-logo {
@@ -50,6 +52,8 @@ body {
 .menu-navegacao {
     display: flex;
     gap: 30px;
+    
+
 }
 
 .menu-navegacao a {
@@ -345,6 +349,16 @@ body {
     border-top: 10px solid #61333b;
     border-end-end-radius: 8px;
     border-end-start-radius: 8px;
+}
+/* 6. RODAPÉ */
+.rodape {
+    background-color: #b07270;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: auto;
+    width: 100%;
 }
 
 /* ==========================================================================
